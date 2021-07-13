@@ -1,12 +1,57 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 /* common styles  or utilities */
-
+a{
+    text-decoration: none;
+    text-align: center;
+}
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
 }
+.contains{
+    /* width: 69%; */
+    width: 100%;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: #562EFF;
+    /* width: 100%; */
+}
+header .nav-items{
+    margin: 0 auto;
+    width: 69%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo img{
+    width: 40px;
+}
+.menu{
+}
+header nav ul{
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+header nav ul li{
+    margin-right: 20px;
+}
+header nav ul li a{
+    color: #FFF;
+}
+
 
 main{
     display: flex;
@@ -120,6 +165,16 @@ Media Queries
 
 /* Mobile Devices */
 @media only screen and (max-width:688px) {
+    header .nav-items{
+        flex-direction: column;
+    }
+    .menu ul{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .menu ul li{
+        margin-top: 20px;
+    }
     .container{
         width: 100%;
     }
